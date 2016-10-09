@@ -1,0 +1,105 @@
+﻿@model IEnumerable<manage.Entities.Employee>
+
+@*Dont forget to add this just after adding the table because it wont work otherwise // IEnumerable *@
+
+@{
+    ViewBag.Title = "Employee";
+    Layout = "~/Views/Shared/LayoutMainPage.cshtml";
+}
+<head>
+    <link href="@Url.Content("~/Content/site.css")"
+          rel="stylesheet" type="text/css" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<h1>Employee Information</h1>
+<p>
+    @Html.ActionLink("Create New", "Create")
+
+    @using (Html.BeginForm())
+    {
+    <p>
+        Last Name: @Html.DropDownList("LastName", "All")
+        Name: @Html.TextBox("searchString")
+        <input type="submit" value="Filter" />
+
+    </p>
+    }
+
+    <table class="table" align="center">
+        <tr>
+            <th>
+
+                First Name
+            </th>
+            <th>
+
+                Last Name
+            </th>
+            <th>
+
+                Date Of Birth
+            </th>
+
+            <th>
+
+                Job Role
+            </th>
+            <th>
+                Phone
+            </th>
+            <th>
+                Email
+            </th>
+
+
+
+            @foreach (var item in Model)
+
+            {
+            <tr>
+
+                <td>
+                    @Html.ActionLink(item.FirstName, "Details", new { id = item.EmployeeID })
+
+                </td>
+                <td>
+                    @Html.ActionLink(item.LastName, "Details", new { id = item.EmployeeID })
+
+                </td>
+                <td>
+                    @Html.ActionLink(item.DateOfBirth.ToString(), "Details", new { id = item.EmployeeID })
+
+                </td>
+                <td>
+                    @Html.ActionLink(item.JobRole, "Details", new { id = item.EmployeeID })
+
+                </td>
+                <td>
+                    @Html.ActionLink(item.Phone.ToString(), "Details", new { id = item.EmployeeID })
+
+                </td>
+                <td>
+                    @Html.ActionLink(item.Email, "Details", new { id = item.EmployeeID })
+
+
+                </td>
+
+                <td>
+                    @*Adding action link //  *@
+
+                    <a href="@Url.Action("Edit", new { id=item.EmployeeID })" title="Edit">
+                        <i class="glyphicon glyphicon-pencil"></i>
+                        <span class="sr-only">Edit</span>
+                    </a> |
+
+                    <a href="@Url.Action("Delete", new { id=item.EmployeeID })" title="Delete">
+                        <i class="glyphicon glyphicon-trash"></i>
+                        <span class="sr-only">Delete</span>
+                    </a> |
+
+                </td>
+            </tr>
+            }
+
+
+        </table>

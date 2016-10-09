@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/LayoutMainPage.cshtml";
+}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+<style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 70%;
+        margin: auto;
+    }
+</style>
+
+<div class="container">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="~/Content/Untitled-3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="~/Content/Untitled-2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="~/Content/Untitled-3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="~/Content/Untitled-4.jpg" alt="">
+            </div>
+
+
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <br />
+            <br>
+            <h4> <b> Blog Post: </b> <br /></h4>
+            <h5> <b>The Main Event: 5 Fundamentals Every Planner Must Know </b></h5>
+            <p1>
+                Every successful event planner is a stickler for details. But what about the newbies who find it difficult to transition
+                from the micro view to the macro? Growing a successful event planning business is certainly not for the faint of heart. <br />
+                <br />
+                <i>
+                    “Be intentional on who you want to meet and connect with. Networking should be purposeful and link you to like-minded
+                    individuals in order to add maximum value to your overall event.”
+                </i>
+                <br />
+                <br />
+                1. Be Intentional in deciding which community partners and corporate sponsors to connect with to foster mutually beneficial relationships.
+                <br />
+                2. Know the target audience of your client. Remember, you are serving the interest of your clients, and not your own.
+                <br />
+                3. Have a strong social media presence. In order to fill seats at events, you must invest time, energy and resources into growing your online platforms.
+                <br />
+                4. Establish a core leadership team. Teamwork makes the dream work!
+                <br />
+                5. Attend networking events at least monthly or quarterly with a variety of corporate and outreach initiatives.
+                <br />
+                <br />
+            </p1>
+            <p><a href="http://www.huffingtonpost.com/keisha-reynolds/the-main-event-5-fundamentals-every-planner-must-know_b_9859814.html">Learn more &raquo;</a></p>
+
+
+        </div>
+        <div class="col-md-4">
+            <br />
+            <br>
+            <h4> <b> Latest News: </b> <br /></h4>
+            <h5> <b> The digital event solution to connect your attendees </b></h5>
+            <p>
+                Goomeo offers networking and engaging solutions together with a mobile app to all organisers of trade shows, exhibitions,
+                congresses and corporate events. No technical skills are required as Goomeo is a very intuitive platform enabling event
+                professionals to manage the mobile and online services they need for the participants of their events.
+                <br />
+
+                It’s all about upgrading the experience people have at an event: put visitors and exhibitors in contact at a trade show, make it
+                easier to share knowledge at a congress or help employees adopt company strategy at a corporate event.
+                <br />
+                The services you offer via the mobile app are not only for your visitors but for all people involved in your event (exhibitors,
+                congressists, VIP, press, speakers…) since Goomeo is able to display different content and features depending on the profile of the user.
+                <br />
+                These features go from revisited basics to hhigh-valuekey services for the attendees:
+            </p>
+            <p><a href="https://www.eventindustrynews.co.uk/features/editors-choice-and-features/digital-event-solution-connect-attendees/">Learn more &raquo;</a></p>
+
+        </div>
+        <br />
+        <br />
+        <div class="col-md-4">
+            <a class="twitter-timeline" href="https://twitter.com/squaremealvande" data-chrome="transparent scrollbar" data-tweet-limit="4">Tweets by TwitterDev</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
