@@ -1,12 +1,11 @@
 ﻿using manage.Context;
-using manage.Entities;
+using manage.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Validation;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 
 namespace manage.Controllers

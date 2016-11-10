@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
 
-namespace manage.Entities
+namespace manage.Models
 {
     public class Events
     {
@@ -17,7 +14,7 @@ namespace manage.Entities
         public string Venue { get; set; }
         [Column(TypeName = "varchar(MAX)")]
         public string Address { get; set; }
-        public Nullable<System.DateTime> Date { get; set; }
-        public Nullable<System.TimeSpan> Time { get; set; }
+        public DateTime? Date { get; set; }
+        public TimeSpan? Time { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model manage.Entities.Employee
+﻿@model manage.Models.Employee
 
 @{
     ViewBag.Title = "Details";
@@ -11,6 +11,7 @@
     <h4>Employee</h4>
     <hr />
     <dl class="dl-horizontal">
+        @Html.AntiForgeryToken()
         <dt>
             First Name
         </dt>
@@ -63,7 +64,7 @@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.EmployeeID }) |
-    <a href="@Url.Action("Employee", new {  })" title="Back to List">
+    <a href="@Url.Action("Employee", new {  })" title="Back to List"/>
         <i class="glyphicon glyphicon-arrow-left"></i>
         <span class="sr-only">Back to List</span>
 </p>

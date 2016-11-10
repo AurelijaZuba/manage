@@ -1,4 +1,4 @@
-﻿@model IEnumerable<manage.Entities.Employee>
+﻿@model IEnumerable<manage.Models.Employee>
 
 @*Dont forget to add this just after adding the table because it wont work otherwise // IEnumerable *@
 
@@ -47,9 +47,10 @@
             <th>
                 Phone
             </th>
-            <th>
-                Email
-            </th>
+        <th>
+            Email
+        </th>
+            <th></th>
 
 
 
@@ -59,32 +60,34 @@
             <tr>
 
                 <td>
-                    @Html.ActionLink(item.FirstName, "Details", new { id = item.EmployeeID })
+                    @Html.DisplayFor(modelItem => item.FirstName)
 
                 </td>
                 <td>
-                    @Html.ActionLink(item.LastName, "Details", new { id = item.EmployeeID })
+                    @Html.DisplayFor(modelItem => item.LastName)
 
                 </td>
                 <td>
-                    @Html.ActionLink(item.DateOfBirth.ToString(), "Details", new { id = item.EmployeeID })
+                    @Html.DisplayFor(modelItem => item.DateOfBirth)
 
                 </td>
                 <td>
-                    @Html.ActionLink(item.JobRole, "Details", new { id = item.EmployeeID })
+                    @Html.DisplayFor(modelItem => item.JobRole)
 
                 </td>
                 <td>
-                    @Html.ActionLink(item.Phone.ToString(), "Details", new { id = item.EmployeeID })
+                    @Html.DisplayFor(modelItem => item.Phone)
 
                 </td>
                 <td>
-                    @Html.ActionLink(item.Email, "Details", new { id = item.EmployeeID })
+                    @Html.DisplayFor(modelItem => item.Email)
 
 
                 </td>
 
                 <td>
+
+
                     @*Adding action link //  *@
 
                     <a href="@Url.Action("Edit", new { id=item.EmployeeID })" title="Edit">
@@ -96,8 +99,13 @@
                         <i class="glyphicon glyphicon-trash"></i>
                         <span class="sr-only">Delete</span>
                     </a> |
+                    <a href="@Url.Action("Details", new { id=item.EmployeeID })" title="Details">
+                        <i class="glyphicon glyphicon-list"></i>
+                        <span class="sr-only">Details</span>
+                    </a> |
 
                 </td>
+
             </tr>
             }
 

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<manage.Entities.Events>
+﻿@model IEnumerable<manage.Models.Events>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/LayoutMainPage.cshtml";
@@ -11,9 +11,10 @@
     @Html.ActionLink("Create New", "Create")
 
     @using (Html.BeginForm())
+
     {
     <p>
-        Venue: @Html.DropDownList("Venue", "All")
+        Venue: @Html.DropDownList("Venue", "All") @* Search by the venue or the name of the event *@
         Name: @Html.TextBox("searchString")
         <input type="submit" value="Filter" />
 
@@ -72,7 +73,7 @@
                         <i class="glyphicon glyphicon-trash"></i>
                         <span class="sr-only">Delete</span>
                     </a> |
-                    <a href="@Url.Action("Details", new { id=item.EventID })" title="Delete">
+                    <a href="@Url.Action("Details", new { id=item.EventID })" title="Details">
                         <i class="glyphicon glyphicon-list"></i>
                         <span class="sr-only">Details</span>
                     </a> |
@@ -80,5 +81,4 @@
                 </td>
             </tr>
         }
-
     </table>

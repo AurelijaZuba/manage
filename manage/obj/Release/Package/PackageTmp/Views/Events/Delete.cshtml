@@ -1,4 +1,4 @@
-﻿@model manage.Entities.Events
+﻿@model manage.Models.Events
 
 @{
     ViewBag.Title = "Delete";
@@ -13,8 +13,9 @@
     <h4>Events</h4>
     <hr />
     <dl class="dl-horizontal">
+        @Html.AntiForgeryToken()
         <dt>
-            @Html.DisplayNameFor(model => model.EventName)
+            Event Name
         </dt>
 
         <dd>
@@ -22,7 +23,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Venue)
+            Venue
         </dt>
 
         <dd>
@@ -30,15 +31,15 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Address)
-        </dt>
+          Address
+                </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Address)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Date)
+            Date
         </dt>
 
         <dd>
@@ -46,7 +47,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Time)
+            Time
         </dt>
 
         <dd>
@@ -57,6 +58,8 @@
 
     @using (Html.BeginForm())
     {
+        @Html.AntiForgeryToken()
+
         <input type="submit" value="Delete" />
     }
     |<a href="@Url.Action("Index", new {  })" title="Back to List">

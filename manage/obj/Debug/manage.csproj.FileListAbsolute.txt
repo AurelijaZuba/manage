@@ -162,7 +162,9 @@ C:\Users\PC\Desktop\manage\manage\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\PC\Desktop\manage\manage\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\PC\Desktop\manage\manage\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\PC\Desktop\manage\manage\obj\Debug\manage.csprojResolveAssemblyReference.cache
-C:\Users\PC\Desktop\manage\manage\obj\Debug\manage.Migrations.data.resources
-C:\Users\PC\Desktop\manage\manage\obj\Debug\manage.csproj.GenerateResource.Cache
 C:\Users\PC\Desktop\manage\manage\obj\Debug\manage.dll
 C:\Users\PC\Desktop\manage\manage\obj\Debug\manage.pdb
+C:\Users\PC\Desktop\manage\manage\obj\Debug\manage.Migrations.updatePhones.resources
+C:\Users\PC\Desktop\manage\manage\obj\Debug\manage.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\manage\manage\obj\Debug\manage.Migrations.updatePhoneNum.resources
+C:\Users\PC\Desktop\manage\manage\obj\Debug\manage.Migrations.updatePhoneNo.resources

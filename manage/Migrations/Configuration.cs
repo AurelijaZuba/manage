@@ -5,14 +5,15 @@ namespace manage.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<manage.Context.EventContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<manage.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "manage.Models.ApplicationDbContext";
         }
 
-        protected override void Seed(manage.Context.EventContext context)
+        protected override void Seed(manage.Models.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

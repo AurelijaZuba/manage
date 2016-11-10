@@ -1129,7 +1129,7 @@ pre code {
     width: 91.66666666666666%;
   }
   .col-md-12 {
-    width: 100%;
+    width: 80%;
   }
   .col-md-push-0 {
     left: auto;
@@ -1724,7 +1724,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 1.428571429;
   color: #555555;
-  vertical-align: middle;
+  vertical-align: central;
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 4px;

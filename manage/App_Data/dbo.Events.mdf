@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Events] (
+    [EventID]   INT           IDENTITY (1, 1) NOT NULL,
+    [EventName] VARCHAR (MAX) NULL,
+    [Venue]     VARCHAR (MAX) NULL,
+    [Address]   VARCHAR (MAX) NULL,
+    [Date]      DATETIME      NULL,
+    [Time]      TIME (7)      NULL,
+    CONSTRAINT [PK_dbo.Events] PRIMARY KEY CLUSTERED ([EventID] ASC)
+);
+

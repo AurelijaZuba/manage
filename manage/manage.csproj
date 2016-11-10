@@ -200,20 +200,30 @@
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Entities\Employee.cs" />
-    <Compile Include="Entities\Events.cs" />
+    <Compile Include="Migrations\201611021910293_updatePhones.cs" />
+    <Compile Include="Migrations\201611021910293_updatePhones.Designer.cs">
+      <DependentUpon>201611021910293_updatePhones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611021915382_updatePhoneNum.cs" />
+    <Compile Include="Migrations\201611021915382_updatePhoneNum.Designer.cs">
+      <DependentUpon>201611021915382_updatePhoneNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611021916584_updatePhoneNo.cs" />
+    <Compile Include="Migrations\201611021916584_updatePhoneNo.Designer.cs">
+      <DependentUpon>201611021916584_updatePhoneNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Events.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610071113044_data.cs" />
-    <Compile Include="Migrations\201610071113044_data.Designer.cs">
-      <DependentUpon>201610071113044_data.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\EventListModel.cs" />
+    <Compile Include="Models\FutureDate.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ValidTime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -296,6 +306,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Entities\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -306,8 +317,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201610071113044_data.resx">
-      <DependentUpon>201610071113044_data.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611021910293_updatePhones.resx">
+      <DependentUpon>201611021910293_updatePhones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611021915382_updatePhoneNum.resx">
+      <DependentUpon>201611021915382_updatePhoneNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611021916584_updatePhoneNo.resx">
+      <DependentUpon>201611021916584_updatePhoneNo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

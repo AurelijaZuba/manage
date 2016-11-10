@@ -1,4 +1,4 @@
-﻿@model manage.Entities.Employee
+﻿@model manage.Models.Employee
 
 @{
     ViewBag.Title = "Delete";
@@ -12,8 +12,9 @@
     <h4>Employee</h4>
     <hr />
     <dl class="dl-horizontal">
+        @Html.AntiForgeryToken()
         <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
+           First Name
         </dt>
 
         <dd>
@@ -21,7 +22,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.LastName)
+           Last Name
         </dt>
 
         <dd>
@@ -29,7 +30,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.DateOfBirth)
+           Date of Birth
         </dt>
 
         <dd>
@@ -37,7 +38,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.JobRole)
+           Job Role
         </dt>
 
         <dd>
@@ -45,7 +46,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Phone)
+            Phone number
         </dt>
 
         <dd>
@@ -53,7 +54,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Email)
+            Email
         </dt>
 
         <dd>

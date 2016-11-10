@@ -1,9 +1,5 @@
-﻿using manage.Entities;
-using System;
-using System.Collections.Generic;
+﻿using manage.Models;
 using System.Data.Entity;
-using System.Linq;
-using System.Web;
 
 namespace manage.Context
 {

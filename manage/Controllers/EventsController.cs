@@ -1,22 +1,27 @@
 ﻿using manage.Context;
-using manage.Entities;
+using manage.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
+
+
 
 namespace manage.Controllers
 {
     public class EventsController : Controller
     {
+        //connect the database 
         private EventContext db = new EventContext();
+
+
 
         // GET: Events
         public ActionResult Index()
         {
+            //List all the venues added to the database and store it
             var venueList = new List<string>();
             var venueQuery = from a in db.Events
                              orderby a.Venue
@@ -28,12 +33,15 @@ namespace manage.Controllers
             var venue = from e in db.Events
                         select e;
 
+            
+
             return View(venue);
         }
 
         [HttpPost]
         public ActionResult Index(string Venue, string searchString)
         {
+
             var venueList = new List<string>();
             var venueQuery = from a in db.Events
                              orderby a.Venue
@@ -54,6 +62,7 @@ namespace manage.Controllers
             {
                 events = events.Where(s => s.EventName.Contains(searchString));
             }
+
 
             return View(events);
         }
@@ -84,6 +93,8 @@ namespace manage.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "EventID,EventName,Venue,Address,Date,Time")] Events events)
         {
+            DateTime dt = new DateTime(2008, 3, 9, 16, 5, 7, 123);
+            String.Format("{0:dd/MM/yy}", dt);
 
             if (ModelState.IsValid)
             {
@@ -114,7 +125,7 @@ namespace manage.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "EventID,Image,ImageMimeType,EventName,Venue,Address,Date,Time")] Events events)
+        public ActionResult Edit([Bind(Include = "EventID, EventName,Venue,Address,Date,Time")] Events events)
         {
             if (ModelState.IsValid)
             {
@@ -142,6 +153,7 @@ namespace manage.Controllers
 
         // POST: Events/Delete/5
         [HttpPost, ActionName("Delete")]
+
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {

@@ -78,7 +78,13 @@ C:\Users\PC\Desktop\manage\manage\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\PC\Desktop\manage\manage\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\PC\Desktop\manage\manage\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\PC\Desktop\manage\manage\obj\Release\manage.csprojResolveAssemblyReference.cache
-C:\Users\PC\Desktop\manage\manage\obj\Release\manage.Migrations.data.resources
 C:\Users\PC\Desktop\manage\manage\obj\Release\manage.csproj.GenerateResource.Cache
 C:\Users\PC\Desktop\manage\manage\obj\Release\manage.dll
 C:\Users\PC\Desktop\manage\manage\obj\Release\manage.pdb
+C:\Users\PC\Desktop\manage\manage\obj\Release\manage.Migrations.InitialCreate.resources
+C:\Users\PC\Desktop\manage\manage\obj\Release\manage.Migrations.newData.resources
+C:\Users\PC\Desktop\manage\manage\obj\Release\manage.Migrations.newTable.resources
+C:\Users\PC\Desktop\manage\manage\obj\Release\manage.Migrations.more.resources
+C:\Users\PC\Desktop\manage\manage\obj\Release\manage.Migrations.newDate.resources
+C:\Users\PC\Desktop\manage\manage\obj\Release\manage.Migrations.newUser.resources
+C:\Users\PC\Desktop\manage\manage\obj\Release\manage.Migrations.addName.resources
